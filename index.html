@@ -267,54 +267,50 @@
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 .cx-footer {
-  padding: 22px 20px 28px;
+  padding: 28px 20px 32px;
   text-align: center;
 }
 
 .cx-footer-content {
-  display: inline-block;
-  text-align: left;
-  font-family: inherit;
-  line-height: 1.15;
+  display: inline-grid;
+  justify-items: start;
+  width: max-content;
+  max-width: 100%;
+  font-family: "Univers SAB", system-ui, sans-serif;
+  line-height: 1;
 }
 
 .cx-footer-ar {
+  direction: rtl;
+  unicode-bidi: plaintext;
   font-family: inherit;
-  font-size: 1.45rem;
+  font-size: 2.15rem;
   font-weight: 400;
   color: #231F20;
-  text-align: left;
-  margin-bottom: 4px;
+  line-height: 1.15;
   white-space: nowrap;
 }
 
 .cx-footer-en {
+  direction: ltr;
   font-family: inherit;
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   font-weight: 700;
-  color: var(--red);
-  text-align: left;
+  color: #E2231A;
+  line-height: 1.1;
   white-space: nowrap;
+  margin-top: 5px;
 }
 
 @media (max-width: 520px) {
   .cx-footer-ar {
-    font-size: 1.15rem;
+    font-size: 1.75rem;
   }
 
   .cx-footer-en {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
-
-@media (max-width: 520px) {
-  .cx-footer-ar {
-    font-size: 1.45rem;
-  }
-
-  .cx-footer-en {
-    font-size: 1.2rem;
-  }
 }
   }
 </style>
