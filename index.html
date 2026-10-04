@@ -267,24 +267,44 @@
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 .cx-footer {
+  padding: 22px 20px 28px;
   text-align: center;
-  padding: 28px 20px 32px;
-  line-height: 1.25;
+}
+
+.cx-footer-content {
+  display: inline-block;
+  text-align: left;
+  font-family: inherit;
+  line-height: 1.15;
 }
 
 .cx-footer-ar {
-  font-family: "Univers SAB", Tahoma, sans-serif;
-  font-size: 2rem;
+  font-family: inherit;
+  font-size: 1.45rem;
   font-weight: 400;
   color: #231F20;
-  margin-bottom: 6px;
+  text-align: left;
+  margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 .cx-footer-en {
-  font-family: "Univers SAB", Arial, sans-serif;
-  font-size: 1.65rem;
+  font-family: inherit;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #E2231A;
+  color: var(--red);
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .cx-footer-ar {
+    font-size: 1.15rem;
+  }
+
+  .cx-footer-en {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -393,8 +413,10 @@
 </section>
 
 <footer class="cx-footer">
-  <div class="cx-footer-ar">تجربة العميل تبدأ من عندك!</div>
-  <div class="cx-footer-en" dir="ltr">Customer Experience Starts with You!</div>
+  <div class="cx-footer-content">
+    <div class="cx-footer-ar" dir="rtl">تجربة العميل تبدأ من عندك!</div>
+    <div class="cx-footer-en" dir="ltr">Customer Experience Starts with You!</div>
+  </div>
 </footer>
 
 <script>
