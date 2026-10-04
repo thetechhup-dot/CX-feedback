@@ -266,11 +266,36 @@
   body.done .hero h1, body.done .hero p { display: none; }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
-  footer {
-    text-align: center;
-    font-size: 0.75rem;
-    color: var(--gray-500);
-    padding: 0 20px 28px;
+.cx-footer {
+  text-align: center;
+  padding: 28px 20px 32px;
+  line-height: 1.25;
+}
+
+.cx-footer-ar {
+  font-family: "Univers SAB", Tahoma, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #231F20;
+  margin-bottom: 6px;
+}
+
+.cx-footer-en {
+  font-family: "Univers SAB", Arial, sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #E2231A;
+}
+
+@media (max-width: 520px) {
+  .cx-footer-ar {
+    font-size: 1.45rem;
+  }
+
+  .cx-footer-en {
+    font-size: 1.2rem;
+  }
+}
   }
 </style>
 </head>
@@ -367,7 +392,10 @@
   <p data-i18n="doneText">شكراً لوقتك ومشاركتك، نتطلع لرؤيتك في فعالياتنا القادمة.</p>
 </section>
 
-<footer>Customer Experience</footer>
+<footer class="cx-footer">
+  <div class="cx-footer-ar">تجربة العميل تبدأ من عندك!</div>
+  <div class="cx-footer-en" dir="ltr">Customer Experience Starts with You!</div>
+</footer>
 
 <script>
   // ضع هنا رابط استقبال الردود (مثل Google Apps Script أو Power Automate). اتركه فارغاً للتجربة.
