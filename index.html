@@ -267,50 +267,44 @@
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 .cx-footer {
-  padding: 28px 20px 32px;
+  padding: 22px 20px 28px;
   text-align: center;
 }
 
 .cx-footer-content {
-  display: inline-grid;
-  justify-items: start;
-  width: max-content;
-  max-width: 100%;
-  font-family: "Univers SAB", system-ui, sans-serif;
-  line-height: 1;
+  display: inline-block;
+  text-align: left;
+  font-family: inherit;
+  line-height: 1.15;
 }
 
 .cx-footer-ar {
-  direction: rtl;
-  unicode-bidi: plaintext;
   font-family: inherit;
-  font-size: 2.15rem;
+  font-size: 1.45rem;
   font-weight: 400;
   color: #231F20;
-  line-height: 1.15;
+  text-align: left;
+  margin-bottom: 4px;
   white-space: nowrap;
 }
 
 .cx-footer-en {
-  direction: ltr;
   font-family: inherit;
-  font-size: 1.55rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #E2231A;
-  line-height: 1.1;
+  color: var(--red);
+  text-align: left;
   white-space: nowrap;
-  margin-top: 5px;
 }
 
 @media (max-width: 520px) {
   .cx-footer-ar {
-    font-size: 1.75rem;
+    font-size: 1.15rem;
   }
 
   .cx-footer-en {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
-}
 }
   }
 </style>
@@ -410,7 +404,7 @@
 
 <footer class="cx-footer">
   <div class="cx-footer-content">
-    <div class="cx-footer-ar" dir="rtl">تجربة العميل تبدأ من عندك!</div>
+    <div class="cx-footer-ar" dir="rtl">تجربــــــة العميــــــــل تبــــــدأ مـــــــن عنـــــــــــــــــــدك!</div>
     <div class="cx-footer-en" dir="ltr">Customer Experience Starts with You!</div>
   </div>
 </footer>
